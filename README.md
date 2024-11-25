@@ -13,5 +13,9 @@
 - First thing to note is validation
   - User can enter numbers not of the range bwtween 1-8
     - While not required, please inform the user they entered the wrong value
+
+
+
+-done \/-
   - User can enter color values not of the given set [red, blue, purple, brown, yellow]
     - While not required, please inform the user they entered the wrong value

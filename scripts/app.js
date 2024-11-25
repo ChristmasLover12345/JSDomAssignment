@@ -14,6 +14,7 @@ let boxNumber = document.getElementById("boxNumber");
 let changeColor = document.getElementById("changeColor");
 let changeBtn = document.getElementById("changeBtn");
 let reset = document.getElementById("reset");
+let error = document.getElementById("error")
 
 let userBox = "";
 let userColor = "";
@@ -42,6 +43,7 @@ function changeTheColor(){
     switch (color)
     {
         case "red":
+            error.innerText = "";
             if (userBox === "1")
             {
                 box1.classList.remove("yellow");
@@ -108,6 +110,7 @@ function changeTheColor(){
             }
         break;
         case "blue":
+            error.innerText = "";
             if (userBox === "1")
             {
                 box1.classList.remove("yellow");
@@ -174,6 +177,7 @@ function changeTheColor(){
             }
         break;
         case "purple":
+            error.innerText = "";
             if (userBox === "1")
             {
                 box1.classList.remove("yellow");
@@ -240,6 +244,7 @@ function changeTheColor(){
             }
         break;
         case "brown":
+            error.innerText = "";
             if (userBox === "1")
             {
                 box1.classList.remove("yellow");
@@ -306,6 +311,7 @@ function changeTheColor(){
             }
         break;
         case "yellow":
+            error.innerText = "";
             if (userBox === "1")
             {
                 box1.classList.remove("brown");
@@ -371,8 +377,9 @@ function changeTheColor(){
                 box8.classList.add("yellow");
             }
         break;
+        
         default:
-            console.log("Color not available, maybe you have a stray space somewhere?")
+            error.innerText = "PLease use the available colors";
         break;
     }
      
