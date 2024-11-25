@@ -10,6 +10,8 @@
 
 ## peer reviewed by: Santiago Jesus Montanez
 
+-done \/-
+
 - First thing to note is validation
   - User can enter numbers not of the range bwtween 1-8
     - While not required, please inform the user they entered the wrong value
