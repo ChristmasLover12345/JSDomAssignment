@@ -18,23 +18,21 @@ let reset = document.getElementById("reset");
 let userBox = "";
 let userColor = "";
 
-boxNumber.addEventListener('keypress', (event) =>{
-    if(event.key === 'Enter')
-    {
+boxNumber.addEventListener('blur', () =>{
+  
     userBox = boxNumber.value
     console.log(userBox)
     
-    }
+    
 })
 
 
-changeColor.addEventListener('keypress', (event) =>{
-    if(event.key === 'Enter')
-    {
+changeColor.addEventListener('blur', () =>{
+  
     userColor = changeColor.value
     console.log(userColor)
     
-    }
+    
 })
 
 function changeTheColor(){
