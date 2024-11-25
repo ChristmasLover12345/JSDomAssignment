@@ -15,13 +15,14 @@ let changeColor = document.getElementById("changeColor");
 let changeBtn = document.getElementById("changeBtn");
 let reset = document.getElementById("reset");
 let error = document.getElementById("error")
+let error2 = document.getElementById("error2")
 
 let userBox = "";
 let userColor = "";
 
 boxNumber.addEventListener('blur', () =>{
   
-    userBox = boxNumber.value
+    userBox = parseInt(boxNumber.value);
     console.log(userBox)
     
     
@@ -44,7 +45,18 @@ function changeTheColor(){
     {
         case "red":
             error.innerText = "";
-            if (userBox === "1")
+
+            if (userBox > 8)
+            {
+                error2.innerText = "Plese, only put numbers between 1-8";
+            }
+            else
+            {
+                error2.innerText ="";
+            }
+
+
+            if (userBox === 1)
             {
                 box1.classList.remove("yellow");
                 box1.classList.remove("brown");
@@ -52,7 +64,7 @@ function changeTheColor(){
                 box1.classList.remove("blue");
                 box1.classList.add("red");
             }
-            else if (userBox === "2")
+            else if (userBox === 2)
             {
                 box2.classList.remove("yellow");
                 box2.classList.remove("brown");
@@ -60,7 +72,7 @@ function changeTheColor(){
                 box2.classList.remove("blue");
                 box2.classList.add("red");
             }
-            else if (userBox === "3")
+            else if (userBox === 3)
             {
                 box3.classList.remove("yellow");
                 box3.classList.remove("brown");
@@ -68,7 +80,7 @@ function changeTheColor(){
                 box3.classList.remove("blue");
                 box3.classList.add("red");
             }
-            else if (userBox === "4")
+            else if (userBox === 4)
             {
                 box4.classList.remove("yellow");
                 box4.classList.remove("brown");
@@ -76,7 +88,7 @@ function changeTheColor(){
                 box4.classList.remove("blue");
                 box4.classList.add("red");
             }
-            else if (userBox === "5")
+            else if (userBox === 5)
             {
                 box5.classList.remove("yellow");
                 box5.classList.remove("brown");
@@ -84,7 +96,7 @@ function changeTheColor(){
                 box5.classList.remove("blue");
                 box5.classList.add("red");
             }
-            else if (userBox === "6")
+            else if (userBox === 6)
             {
                 box6.classList.remove("yellow");
                 box6.classList.remove("brown");
@@ -92,7 +104,7 @@ function changeTheColor(){
                 box6.classList.remove("blue");
                 box6.classList.add("red");
             }
-            else if (userBox === "7")
+            else if (userBox === 7)
             {
                 box7.classList.remove("yellow");
                 box7.classList.remove("brown");
@@ -100,7 +112,7 @@ function changeTheColor(){
                 box7.classList.remove("blue");
                 box7.classList.add("red");
             }
-            else if (userBox === "8")
+            else if (userBox === 8)
             {
                 box8.classList.remove("yellow");
                 box8.classList.remove("brown");
@@ -111,7 +123,17 @@ function changeTheColor(){
         break;
         case "blue":
             error.innerText = "";
-            if (userBox === "1")
+
+            if (userBox > 8)
+                {
+                    error2.innerText = "Plese, only put numbers between 1-8";
+                }
+                else
+                {
+                    error2.innerText ="";
+                }
+
+            if (userBox === 1)
             {
                 box1.classList.remove("yellow");
                 box1.classList.remove("brown");
@@ -119,7 +141,7 @@ function changeTheColor(){
                 box1.classList.remove("red");
                 box1.classList.add("blue");
             }
-            else if (userBox === "2")
+            else if (userBox === 2)
             {
                 box2.classList.remove("yellow");
                 box2.classList.remove("brown");
@@ -127,7 +149,7 @@ function changeTheColor(){
                 box2.classList.remove("red");
                 box2.classList.add("blue");
             }
-            else if (userBox === "3")
+            else if (userBox === 3)
             {
                 box3.classList.remove("yellow");
                 box3.classList.remove("brown");
@@ -135,7 +157,7 @@ function changeTheColor(){
                 box3.classList.remove("red");
                 box3.classList.add("blue");
             }
-            else if (userBox === "4")
+            else if (userBox === 4)
             {
                 box4.classList.remove("yellow");
                 box4.classList.remove("brown");
@@ -143,7 +165,7 @@ function changeTheColor(){
                 box4.classList.remove("red");
                 box4.classList.add("blue");
             }
-            else if (userBox === "5")
+            else if (userBox === 5)
             {
                 box5.classList.remove("yellow");
                 box5.classList.remove("brown");
@@ -151,7 +173,7 @@ function changeTheColor(){
                 box5.classList.remove("red");
                 box5.classList.add("blue");
             }
-            else if (userBox === "6")
+            else if (userBox === 6)
             {
                 box6.classList.remove("yellow");
                 box6.classList.remove("brown");
@@ -159,7 +181,7 @@ function changeTheColor(){
                 box6.classList.remove("red");
                 box6.classList.add("blue");
             }
-            else if (userBox === "7")
+            else if (userBox === 7)
             {
                 box7.classList.remove("yellow");
                 box7.classList.remove("brown");
@@ -167,7 +189,7 @@ function changeTheColor(){
                 box7.classList.remove("red");
                 box7.classList.add("blue");
             }
-            else if (userBox === "8")
+            else if (userBox === 8)
             {
                 box8.classList.remove("yellow");
                 box8.classList.remove("brown");
@@ -178,7 +200,17 @@ function changeTheColor(){
         break;
         case "purple":
             error.innerText = "";
-            if (userBox === "1")
+
+            if (userBox > 8)
+                {
+                    error2.innerText = "Plese, only put numbers between 1-8";
+                }
+                else
+                {
+                    error2.innerText ="";
+                }
+
+            if (userBox === 1)
             {
                 box1.classList.remove("yellow");
                 box1.classList.remove("brown");
@@ -186,7 +218,7 @@ function changeTheColor(){
                 box1.classList.remove("red");
                 box1.classList.add("purple");
             }
-            else if (userBox === "2")
+            else if (userBox === 2)
             {
                 box2.classList.remove("yellow");
                 box2.classList.remove("brown");
@@ -194,7 +226,7 @@ function changeTheColor(){
                 box2.classList.remove("red");
                 box2.classList.add("purple");
             }
-            else if (userBox === "3")
+            else if (userBox === 3)
             {
                 box3.classList.remove("yellow");
                 box3.classList.remove("brown");
@@ -202,7 +234,7 @@ function changeTheColor(){
                 box3.classList.remove("red");
                 box3.classList.add("purple");
             }
-            else if (userBox === "4")
+            else if (userBox === 4)
             {
                 box4.classList.remove("yellow");
                 box4.classList.remove("brown");
@@ -210,7 +242,7 @@ function changeTheColor(){
                 box4.classList.remove("red");
                 box4.classList.add("purple");
             }
-            else if (userBox === "5")
+            else if (userBox === 5)
             {
                 box5.classList.remove("yellow");
                 box5.classList.remove("brown");
@@ -218,7 +250,7 @@ function changeTheColor(){
                 box5.classList.remove("red");
                 box5.classList.add("purple");
             }
-            else if (userBox === "6")
+            else if (userBox ===6)
             {
                 box6.classList.remove("yellow");
                 box6.classList.remove("brown");
@@ -226,7 +258,7 @@ function changeTheColor(){
                 box6.classList.remove("red");
                 box6.classList.add("purple");
             }
-            else if (userBox === "7")
+            else if (userBox === 7)
             {
                 box7.classList.remove("yellow");
                 box7.classList.remove("brown");
@@ -234,7 +266,7 @@ function changeTheColor(){
                 box7.classList.remove("red");
                 box7.classList.add("purple");
             }
-            else if (userBox === "8")
+            else if (userBox === 8)
             {
                 box8.classList.remove("yellow");
                 box8.classList.remove("brown");
@@ -245,7 +277,17 @@ function changeTheColor(){
         break;
         case "brown":
             error.innerText = "";
-            if (userBox === "1")
+
+            if (userBox > 8)
+                {
+                    error2.innerText = "Plese, only put numbers between 1-8";
+                }
+                else
+                {
+                    error2.innerText ="";
+                }
+
+            if (userBox === 1)
             {
                 box1.classList.remove("yellow");
                 box1.classList.remove("purple");
@@ -253,7 +295,7 @@ function changeTheColor(){
                 box1.classList.remove("red");
                 box1.classList.add("brown");
             }
-            else if (userBox === "2")
+            else if (userBox === 2)
             {
                 box2.classList.remove("yellow");
                 box2.classList.remove("purple");
@@ -261,7 +303,7 @@ function changeTheColor(){
                 box2.classList.remove("red");
                 box2.classList.add("brown");
             }
-            else if (userBox === "3")
+            else if (userBox === 3)
             {
                 box3.classList.remove("yellow");
                 box3.classList.remove("purple");
@@ -269,7 +311,7 @@ function changeTheColor(){
                 box3.classList.remove("red");
                 box3.classList.add("brown");
             }
-            else if (userBox === "4")
+            else if (userBox === 4)
             {
                 box4.classList.remove("yellow");
                 box4.classList.remove("purple");
@@ -277,7 +319,7 @@ function changeTheColor(){
                 box4.classList.remove("red");
                 box4.classList.add("brown");
             }
-            else if (userBox === "5")
+            else if (userBox === 5)
             {
                 box5.classList.remove("yellow");
                 box5.classList.remove("purple");
@@ -285,7 +327,7 @@ function changeTheColor(){
                 box5.classList.remove("red");
                 box5.classList.add("brown");
             }
-            else if (userBox === "6")
+            else if (userBox === 6)
             {
                 box6.classList.remove("yellow");
                 box6.classList.remove("purple");
@@ -293,7 +335,7 @@ function changeTheColor(){
                 box6.classList.remove("red");
                 box6.classList.add("brown");
             }
-            else if (userBox === "7")
+            else if (userBox === 7)
             {
                 box7.classList.remove("yellow");
                 box7.classList.remove("purple");
@@ -301,7 +343,7 @@ function changeTheColor(){
                 box7.classList.remove("red");
                 box7.classList.add("brown");
             }
-            else if (userBox === "8")
+            else if (userBox === 8)
             {
                 box8.classList.remove("yellow");
                 box8.classList.remove("purple");
@@ -312,7 +354,17 @@ function changeTheColor(){
         break;
         case "yellow":
             error.innerText = "";
-            if (userBox === "1")
+
+            if (userBox > 8)
+                {
+                    error2.innerText = "Plese, only put numbers between 1-8";
+                }
+                else
+                {
+                    error2.innerText ="";
+                }
+
+            if (userBox === 1)
             {
                 box1.classList.remove("brown");
                 box1.classList.remove("purple");
@@ -320,7 +372,7 @@ function changeTheColor(){
                 box1.classList.remove("red");
                 box1.classList.add("yellow");
             }
-            else if (userBox === "2")
+            else if (userBox === 2)
             {
                 box2.classList.remove("brown");
                 box2.classList.remove("purple");
@@ -328,7 +380,7 @@ function changeTheColor(){
                 box2.classList.remove("red");
                 box2.classList.add("yellow");
             }
-            else if (userBox === "3")
+            else if (userBox === 3)
             {
                 box3.classList.remove("brown");
                 box3.classList.remove("purple");
@@ -336,7 +388,7 @@ function changeTheColor(){
                 box3.classList.remove("red");
                 box3.classList.add("yellow");
             }
-            else if (userBox === "4")
+            else if (userBox === 4)
             {
                 box4.classList.remove("brown");
                 box4.classList.remove("purple");
@@ -344,7 +396,7 @@ function changeTheColor(){
                 box4.classList.remove("red");
                 box4.classList.add("yellow");
             }
-            else if (userBox === "5")
+            else if (userBox === 5)
             {
                 box5.classList.remove("brown");
                 box5.classList.remove("purple");
@@ -352,7 +404,7 @@ function changeTheColor(){
                 box5.classList.remove("red");
                 box5.classList.add("yellow");
             }
-            else if (userBox === "6")
+            else if (userBox === 6)
             {
                 box6.classList.remove("brown");
                 box6.classList.remove("purple");
@@ -360,7 +412,7 @@ function changeTheColor(){
                 box6.classList.remove("red");
                 box6.classList.add("yellow");
             }
-            else if (userBox === "7")
+            else if (userBox === 7)
             {
                 box7.classList.remove("brown");
                 box7.classList.remove("purple");
@@ -368,7 +420,7 @@ function changeTheColor(){
                 box7.classList.remove("red");
                 box7.classList.add("yellow");
             }
-            else if (userBox === "8")
+            else if (userBox === 8)
             {
                 box8.classList.remove("brown");
                 box8.classList.remove("purple");
@@ -379,7 +431,7 @@ function changeTheColor(){
         break;
         
         default:
-            error.innerText = "PLease use the available colors";
+            error.innerText = "Please use the available colors";
         break;
     }
      
